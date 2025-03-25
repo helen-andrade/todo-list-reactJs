@@ -1,0 +1,73 @@
+.containerTaskAdded {
+    visibility: visible;
+}
+
+.taskAdded {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray-500);
+  width: 736px;
+  height: 62px;
+  border-radius: 8px;
+  margin-left: 37.8rem;
+  margin-top: 1rem;
+}
+
+.taskAdded p {
+  margin-left: 2rem;
+}
+
+.iconTrash {
+  margin-left: 15rem;
+  width: 24px;
+  height: 18px;
+}
+
+.iconTrash:hover {
+  cursor: pointer;
+}
+
+.taskAdded {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.taskAdded {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.taskAdded input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.taskAdded input[type="checkbox"]:checked {
+  background-color: var(--purple);
+  border-color: var(--purple);
+  color: white;
+  position: relative;
+}
+
+.taskAdded input[type="checkbox"]:checked::before {
+  content: "✔";
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

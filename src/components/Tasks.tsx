@@ -1,6 +1,16 @@
 import "./Tasks.css";
+import { useState } from "react";
+import { v4 as uuidv4 } from 'uuid';
+
+interface Task {
+  id: number;
+  task: string;
+  completed: boolean;
+}
 
 const Tasks = () => {
+  const [tasks, setTasks] = useState<Task[]>([]);
+
   return (
     <div className="container">
       <div className="containerTasks">

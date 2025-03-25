@@ -3,9 +3,9 @@ import "./Input.css";
 const Input = () => {
   return (
     <div className="inputNewTask">
-      <input type="text" placeholder="Adicione uma nova tarefa" />
+      <input type="text" placeholder="Adicione uma nova tarefa"/>
       <div className="containerAddNewTask">
-        <button className="buttonNewTask">
+        <button className="buttonNewTask" >
           Criar
           <img
             className="iconAdd"
