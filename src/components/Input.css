@@ -1,0 +1,44 @@
+.inputNewTask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -25px;
+}
+
+.inputNewTask input {
+  background-color: var(--gray-500);
+  color: var(--white);
+  padding: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid black;
+  width: 638px;
+  margin-right: 8px;
+}
+
+.inputNewTask input::placeholder {
+  color: var(--gray-300);
+  font-size: medium;
+}
+
+.buttonNewTask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue-dark);
+  border: none;
+  color: var(--white);
+  width: 5rem;
+  height: 3.3rem;
+  border-radius: 8px;
+  cursor: pointer;
+  gap: 0.5rem; 
+}
+
+.buttonNewTask img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.buttonNewTask:hover {
+  background-color: var(--blue);
+}
