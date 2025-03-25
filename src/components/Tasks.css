@@ -1,0 +1,51 @@
+.containerTasks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4.5rem;
+  font-weight: bold;
+}
+
+.containerTasks p {
+  display: contents;
+}
+
+.tasksCreated {
+  margin-right: 28rem;
+}
+
+.tasksCreated p {
+  color: var(--blue);
+}
+
+.completedTasks p {
+  color: var(--purple);
+}
+
+.number {
+  background-color: var(--gray-400);
+  border-radius: 50%;
+  padding: 4px 10px;
+  margin-left: 10px;
+}
+
+.message {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5rem;
+  margin-left: 37.5rem;
+  width: 736px;
+  height: 244px;
+  border-radius: 10px 10px 0 0;
+  border-top: 1px solid var(--gray-300);
+  color: var(--gray-300);
+  text-align: center;
+  font-size: 18px;
+}
+
+.message img {
+  width: 80px;
+  margin-top: 3.5rem;
+  margin-left: 8rem;
+}
