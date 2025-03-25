@@ -1,16 +1,10 @@
 import "./App.css";
-import Header from "./components/Header";
-import Input from "./components/Input";
-import NewTaskAdd from "./components/NewTaskAdd";
-import Tasks from "./components/Tasks";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div>
-      <Header />
-      <Input />
-      <Tasks />
-      <NewTaskAdd />
+      <Home />
     </div>
   );
 }
