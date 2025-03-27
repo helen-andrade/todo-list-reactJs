@@ -1,10 +1,14 @@
 import { useState } from "react";
 import "./Input.css";
-import { Task } from "../pages/Home";
 import { v4 as uuidv4 } from "uuid";
 
 interface Props {
   addTask: (newTask: Task) => void;
+}
+export interface Task {
+  id: string;
+  task: string;
+  taskCompleted: boolean;
 }
 
 const Input = ({ addTask }: Props) => {
@@ -12,10 +16,10 @@ const Input = ({ addTask }: Props) => {
 
   const handleAddTask = () => {
     if (!task.trim()) return;
-    const newTask = {
+    const newTask: Task = {
       id: uuidv4(),
       task: task,
-      completed: false,
+      taskCompleted: false,
     };
     addTask(newTask);
     setTask("");

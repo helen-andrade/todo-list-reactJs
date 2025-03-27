@@ -7,7 +7,7 @@ import { useState } from "react";
 export interface Task {
   id: string;
   task: string;
-  completed: boolean;
+  taskCompleted: boolean;
 }
 
 function Home() {
@@ -16,23 +16,33 @@ function Home() {
   const addTask = (newTask: Task) => {
     setTasks([...tasks, newTask]);
   };
-  
+
   const deleteTask = (id: string) => {
     setTasks(tasks.filter((task) => task.id !== id));
+  };
+
+  const toggleTaskCompletion = (id: string) => {
+    setTasks(
+      tasks.map((task) =>
+        task.id === id ? { ...task, taskCompleted: !task.taskCompleted } : task
+      )
+    );
   };
 
   return (
     <div>
       <Header />
       <Input addTask={addTask} />
-      <div className="containerTasks">
+      <div className="containerTasks" >
         <div className="tasksCreated">
           <p>Tarefas criadas</p>
           <span className="numberTasksCreateds number">{tasks.length}</span>
         </div>
         <div className="completedTasks">
           <p>Concluídas</p>
-          <span className="numberTasksCompletes number">0</span>
+          <span className="numberTasksCompletes number">
+            {tasks.filter((task) => task.taskCompleted).length} de {tasks.length}
+          </span>
         </div>
       </div>
 
@@ -45,7 +55,11 @@ function Home() {
           </p>
         </div>
       ) : (
-        <NewTaskAdd tasks={tasks} onDeleteTask={deleteTask} />
+        <NewTaskAdd
+          tasks={tasks}
+          onDeleteTask={deleteTask}
+          onToggleTaskCompletion={toggleTaskCompletion}
+        />
       )}
     </div>
   );
