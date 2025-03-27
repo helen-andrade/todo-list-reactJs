@@ -16,6 +16,10 @@ function Home() {
   const addTask = (newTask: Task) => {
     setTasks([...tasks, newTask]);
   };
+  
+  const deleteTask = (id: string) => {
+    setTasks(tasks.filter((task) => task.id !== id));
+  };
 
   return (
     <div>
@@ -41,7 +45,7 @@ function Home() {
           </p>
         </div>
       ) : (
-        <NewTaskAdd />
+        <NewTaskAdd tasks={tasks} onDeleteTask={deleteTask} />
       )}
     </div>
   );

@@ -1,35 +1,31 @@
-/*import { useState } from "react";*/
-import "./NewTaskAdd.css"
-
-/*
-interface TaskProps {
-  id: number;
-  task: string;
-  completed: boolean;
-  handleDeleteTask: (id: number) => void;
-  handleCompleteTask: (id: number) => void;
+import { Task } from "../pages/Home";
+import "./NewTaskAdd.css";
+interface Props {
+  tasks: Task[];
+  onDeleteTask: (id: string) => void;
 }
-*/
 
-/*
-function handleNewTask({ task }: TaskProps) {
-  const [task, setTask] = useState<TaskProps[]>([]);
-  const [taskCompleted, setTaskCompleted] = useState<TaskProps[]>([]);
-  const [newTask, setNewTask] = useState<string>("");
-  const [id, setId] = useState<number>(0);  
-}
-*/
+const NewTaskAdd = ({ tasks, onDeleteTask }: Props) => {
+  function handleDeletTask(id: string) {
+    onDeleteTask(id);
+  }
 
-const NewTaskAdd = () => {
   return (
     <div className="containerTaskAdded">
-        <div className="taskAdded">
-          <input type="checkbox"/>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit!</p>
-          <img className="iconTrash" src="../../assets/Trash.svg" alt="Icone de lixeira" />
+      {tasks.map((task) => (
+        <div className="taskAdded" key={task.id}>
+          <input type="checkbox" style={{textDecoration: tasks ? "line-through" : ''}} />
+          <p>{task.task}</p>
+          <img
+            onClick={() => handleDeletTask(task.id)}
+            className="iconTrash"
+            src="../../assets/Trash.svg"
+            alt="Icone de lixeira"
+            title="Deletar tarefa"
+          />
         </div>
+      ))}
     </div>
-    
   );
 };
 

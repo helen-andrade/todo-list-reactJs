@@ -1,43 +1,30 @@
 .containerTaskAdded {
-    visibility: visible;
+  margin-top: 30px;
 }
 
 .taskAdded {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background-color: var(--gray-500);
-  width: 736px;
-  height: 62px;
+  max-width: 736px;
+  width: 100%;
+  padding: 1rem;
   border-radius: 8px;
-  margin-left: 37.8rem;
-  margin-top: 1rem;
+  margin: 1rem auto;
+  gap: 1rem;
 }
 
 .taskAdded p {
-  margin-left: 2rem;
+  flex: 1;
+  margin: 0 1rem;
+  word-break: break-word;
 }
 
 .iconTrash {
-  margin-left: 15rem;
   width: 24px;
   height: 18px;
-}
-
-.iconTrash:hover {
   cursor: pointer;
-}
-
-.taskAdded {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.taskAdded {
-  display: flex;
-  align-items: center;
-  gap: 1px;
 }
 
 .taskAdded input[type="checkbox"] {
