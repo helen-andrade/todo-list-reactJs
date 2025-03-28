@@ -2,7 +2,7 @@
 
 ## Este é um projeto de To-do List desenvolvido como desafio prático para reforçar conceitos fundamentais do ReactJS. Ele permite que o usuário adicione, marque e remova tarefas de uma lista, mantendo o controle de progresso.
 
-<div align="center"> <img style="height: 600px;" src="./assets/1.png"> <img style="height: 600px;" src="./assets/2.png"> </div>
+<div align="center"> <img style="height: 400px;" src="./assets/1.png"> <img style="height: 400px;" src="./assets/2.png"> </div>
 
 # Funcionalidades
 
