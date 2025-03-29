@@ -1,4 +1,4 @@
-# Sobre esse projeto
+# To-do List
 
 ## To-do List
 
@@ -23,7 +23,7 @@ Este é um projeto de To-do List desenvolvido como desafio prático para reforç
 
 - Página com responsividade
 
-<br/>
+ReactJS - Para construção da interface
 
 # Conceitos abordados
 
@@ -37,7 +37,12 @@ Este é um projeto de To-do List desenvolvido como desafio prático para reforç
 
 - Componentização
 
-<br/>
+- JavaScript/TypeScript - Para lógica de programação e tipagem 
+
+- CSS - Para estilização da interface
+
+- React Hooks - Para gerenciamento de estado
+
 
 # Como utilizar
 
