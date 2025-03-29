@@ -23,7 +23,7 @@ Este é um projeto de To-do List desenvolvido como desafio prático para reforç
 
 - Página com responsividade
 
-ReactJS - Para construção da interface
+- ReactJS - Para construção da interface
 
 # Conceitos abordados
 
