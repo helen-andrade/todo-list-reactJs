@@ -1,43 +1,43 @@
 # Sobre esse projeto
 
 ## To-do List
+
 Este é um projeto de To-do List desenvolvido como desafio prático para reforçar conceitos fundamentais do ReactJS.
 
 <div align="center">
-    <img style="height: 600px;" src="./assets/1.png">
-    <img style="height: 600px;" src="./assets/2.png">
+    <img style="width: 600px;" src="./assets/1.png">
+    <img style="width: 600px;" src="./assets/2.png">
+    <img style="width: 600px;" src="./assets/3.png">
+    <img style="width: 600px;" src="./assets/4.png">
 </div>
-
 
 # Funcionalidades
 
+- Adicionar uma nova tarefa
 
-* Adicionar uma nova tarefa
+- Marcar e desmarcar uma tarefa como concluída
 
-* Marcar e desmarcar uma tarefa como concluída
+- Remover uma tarefa da listagem
 
-* Remover uma tarefa da listagem
+- Mostrar o progresso de conclusão das tarefas
 
-* Mostrar o progresso de conclusão das tarefas
+- Página com responsividade
 
 <br/>
-
 
 # Conceitos abordados
 
-* Estados
+- Estados
 
-* Imutabilidade do estado
+- Imutabilidade do estado
 
-* Listas e chaves no ReactJS
+- Listas e chaves no ReactJS
 
-* Propriedades
+- Propriedades
 
-* Componentização
-
+- Componentização
 
 <br/>
-
 
 # Como utilizar
 
