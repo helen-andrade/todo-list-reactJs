@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -25px;
+  position: relative;
+  top: -25px;
 }
 
 .inputNewTask input {
@@ -31,7 +32,7 @@
   height: 3.3rem;
   border-radius: 8px;
   cursor: pointer;
-  gap: 0.5rem; 
+  gap: 0.5rem;
 }
 
 .buttonNewTask img {
@@ -41,4 +42,11 @@
 
 .buttonNewTask:hover {
   background-color: var(--blue);
+}
+
+@media (max-width: 768px) {
+  .inputNewTask {
+    width: 70%;
+    margin: auto;
+  }
 }

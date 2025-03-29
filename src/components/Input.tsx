@@ -28,6 +28,7 @@ const Input = ({ addTask }: Props) => {
   return (
     <div className="inputNewTask">
       <input
+        className="inputTask"
         type="text"
         placeholder="Adicione uma nova tarefa"
         value={task}
